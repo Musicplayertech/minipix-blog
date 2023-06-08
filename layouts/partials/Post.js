@@ -45,7 +45,7 @@ const Post = ({ post }) => {
         </Link>
       </h3>
       <ul className="flex items-center space-x-4">
-        <li>
+        {/* <li>
           <Link
             className="inline-flex items-center font-secondary text-xs leading-3"
             href="/about"
@@ -53,7 +53,7 @@ const Post = ({ post }) => {
             <FaUserAlt className="mr-1.5" />
             {author}
           </Link>
-        </li>
+        </li> */}
         <li className="inline-flex items-center font-secondary text-xs leading-3">
           <FaRegCalendar className="mr-1.5" />
           {dateFormat(post.frontmatter.date)}
