@@ -1,0 +1,60 @@
+{
+  "site": {
+    "title": "MiniPIX - Blogs",
+    "base_url": "/",
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_white": "/images/logo-light.png",
+    "logo_width": "180",
+    "logo_height": "50",
+    "logo_text": "MiniPIX"
+  },
+  "settings": {
+    "theme_switcher": true,
+    "default_theme": "dark",
+    "pagination": 6,
+    "InnerPaginationOptions": {
+      "enableTop": false,
+      "enableBottom": true
+    },
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+  "params": {
+    "tag_manager_id": "",
+    "footer_content": "Our Services are built to be for Every Common Person’s ENTERTAINMENT reach with a catalogue of Movies, Series, Short Films and Songs.",
+    "copyright": "Designed and Developed By [Intellogic Innovations Pvt Ltd](https://minilive.in/)"
+  },
+  "metadata": {
+    "meta_author": "MiniPIX",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Our Services are built to be for Every Common Person’s ENTERTAINMENT reach with a catalogue of Movies, Series, Short Films and Songs."
+  },
+  "widgets": {
+    "about": {
+      "enable": true,
+      "content": "Every Personnel teamed here, has a 100% motive to ENTERTAIN."
+    },
+    "featured_posts": {
+      "enable": true,
+      "title": "Blog Categories",
+      "showPost": 3
+    },
+    "categories": {
+      "enable": true,
+      "title": "Blog Categories"
+    },
+    "newsletter": {
+      "enable": true,
+      "title": "Newsletter",
+      "content": "Subscribers and get our latest update!",
+      "privacy_policy_page": "#",
+      "malichipm_url": ""
+    }
+  },
+  "disqus": {
+    "enable": true,
+    "shortname": "MiniPIX Blogs",
+    "settings": {}
+  }
+}
