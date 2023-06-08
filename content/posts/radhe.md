@@ -2,7 +2,7 @@
 title: "Radhe Streaming Free only on MiniPIX"
 date: 2022-06-04T13:00:00Z
 image: https://minipix-cdn.ibee.ai/cdn-cgi/image/width=512,height=288/images/db7bc422-308e-4d10-97d8-3b7fe904d9bc.png
-categories: ["Movies"]
+categories: ["movies","releases"]
 featured: false
 draft: false
 ---

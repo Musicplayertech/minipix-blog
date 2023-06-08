@@ -2,7 +2,7 @@
 title: "Watch 'India VS Pakistan' on MiniPIX - Free Streaming"
 date: 2022-06-06T14:00:00Z
 image: https://minipix-cdn.ibee.ai/cdn-cgi/image/width=512,height=288/images/699fadd1-64f8-4744-b90a-ad5db4e47021.jpeg
-categories: ["Movies"]
+categories: ["movies","releases"]
 featured: false
 draft: false
 ---

@@ -35,10 +35,10 @@ body.menu-open {
 }
 
 .nav-link {
-  @apply rounded-[30px] px-6 py-2.5 text-left font-secondary text-[13.5px] capitalize  text-dark transition hover:bg-primary hover:text-white dark:text-darkmode-light md:px-3 md:py-3 lg:text-center xl:px-5;
+  @apply font-semibold rounded-[30px] px-6 py-2.5 text-left font-secondary text-[15px] capitalize  text-dark transition dark:text-darkmode-light md:px-3 md:py-3 lg:text-center xl:px-5;
 
   &.active {
-    @apply bg-primary text-white;
+    @apply  text-[#ff0091] font-semibold;
   }
 }
 
@@ -67,7 +67,7 @@ body.menu-open {
   @apply inline-block h-10 w-10 cursor-pointer rounded-full bg-primary p-2.5 text-xl text-white;
 }
 .search-modal {
-  @apply invisible absolute top-0 left-0 right-0 z-10 h-10 bg-body opacity-0 transition dark:bg-black md:h-full;
+  @apply invisible absolute top-0 left-0 right-0 z-10 h-14 bg-body opacity-0 transition dark:bg-black md:h-full;
   .form-input {
     @apply h-full w-full border-0 px-4 text-lg;
   }

@@ -5,18 +5,26 @@
       "url": "/"
     } ,
     {
-      "name": "Categories",
-      "url": "/categories" 
+      "name": "Releases",
+      "url": "/categories/releases" 
+    },
+    {
+      "name": "Upcoming",
+      "url": "/categories/upcoming" 
     }
   ],
   "footer": [
     {
       "name": "Home",
       "url": "/"
+    } ,
+    {
+      "name": "Releases",
+      "url": "/categories/releases" 
     },
     {
-      "name": "Categories",
-      "url": "/categories" 
+      "name": "Upcoming",
+      "url": "/categories/upcoming" 
     }
   ]
 }

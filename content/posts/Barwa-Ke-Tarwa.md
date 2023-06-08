@@ -2,7 +2,7 @@
 title: "Song - Barwa Ke Tarwa | बरवा के तरवा Now Streaming Free Only on MiniPIX"
 date: 2022-06-02T10:00:00Z
 image: https://minipix-cdn.ibee.ai/cdn-cgi/image/width=512,height=288/images/fe75d1a3-c2da-4ee9-a40b-506826a33ade.png
-categories: ["Songs"]
+categories: ["songs","releases"]
 featured: true
 draft: false
 ---

@@ -2,7 +2,7 @@
 title: "Cigarette Jarave Da - Now Streaming Free Only on MiniPIX "
 date: 2022-06-01T08:00:00Z
 image: https://minipix-cdn.ibee.ai/images/cc020b4e-8772-4729-aad7-1b00d22824ba.jpeg
-categories: ["Songs"]
+categories: ["songs","releases"]
 featured: true
 draft: false
 ---

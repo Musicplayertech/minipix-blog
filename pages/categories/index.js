@@ -11,13 +11,13 @@ import { slugify } from "@lib/utils/textConverter";
 const Categories = ({ categories }) => {
   return (
     <Base title={"categories"}>
-      <section className="section pt-0">
+      <section className="section pt-3">
         {markdownify(
-          "Categories",
-          "h1",
-          "h2 mb-16 bg-theme-light dark:bg-darkmode-theme-dark py-12 text-center lg:text-[55px]"
+          "Blog Categories",
+          "h3",
+          "h3 mb-3 text-center"
         )}
-        <div className="container pt-12 text-center">
+        <div className="container pt-5 text-center">
           <ul className="row">
             {categories.map((category, i) => (
               <li

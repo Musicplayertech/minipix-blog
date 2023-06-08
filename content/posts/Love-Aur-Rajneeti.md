@@ -2,7 +2,7 @@
 title: " Watch FUll Movies Love Aur Rajneeti on MiniPIX"
 date: 2022-06-03T11:00:00Z
 image: https://minipix-cdn.ibee.ai/cdn-cgi/image/width=512,height=288/images/147da03c-da8e-411f-a18f-b17c1c78b77d.jpeg
-categories: ["Movies"]
+categories: ["movies","releases"]
 featured: true
 draft: false
 ---

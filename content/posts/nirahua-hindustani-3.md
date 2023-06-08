@@ -2,7 +2,7 @@
 title: "'Nirahua Hindustani 3' Now Streaming on MiniPIX"
 date: 2023-06-05T13:00:00Z
 image: https://minipix-cdn.ibee.ai/cdn-cgi/image/width=512,height=288/images/d42901ed-723c-44f5-bb98-8c45ed0a68e1.jpeg
-categories: ["Movies"]
+categories: ["movies","releases"]
 featured: false
 draft: false
 ---

@@ -2,7 +2,7 @@
 title: "Ghaghra Rangai Now Streaming Free Only on MiniPIX"
 date: 2022-06-01T09:00:00Z
 image: https://minipix-cdn.ibee.ai/images/c3d0a1a7-ab2d-4e50-a0f9-a44178ea6ed7.jpeg
-categories: ["Songs"]
+categories: ["songs","releases"]
 featured: false
 draft: false
 ---
