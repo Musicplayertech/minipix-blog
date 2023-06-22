@@ -44,7 +44,8 @@ const Home = ({
             </p>
             <Link
                     className="btn btn-primary mt-6 mb-12"
-                    href="/"
+                    href="https://minipix.in/"
+                    target="_blank"
                     >
                    Watch Now
                   </Link>
