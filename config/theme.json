@@ -32,9 +32,9 @@
   "fonts": {
     "font_family": {
       "primary": "Raleway:wght@400",
-      "primary_type": "Montserrat",
-      "secondary": "Merriweather Sans:wght@400;700",
-      "secondary_type": "sans-serif"
+      "primary_type": "Open Sans",
+      "secondary": "Open Sans:wght@400;700",
+      "secondary_type": "Poppins"
     },
     "font_size": {
       "base": "16",

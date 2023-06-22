@@ -29,14 +29,41 @@ const Home = ({
   const showPosts = pagination;
 
   return (
-    <Base>
+    <Base> 
+  <section className="background-radial-gradient mb-2 text-center lg:text-left ">
+    <div className="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('/images/banner-author.png')] h-[650px]">
+      <div
+        className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] bg-fixed">
+        <div className="flex h-full items-end justify-center">
+          <div className="max-w-[800px] px-6 text-center text-white md:py-0 md:px-12">
+            <h2 className="text-white mb-6 text-4xl font-bold leading-tight tracking-tight md:text-6xl xl:text-7xl">
+              Are you ready <br /><span>for Entertainment !</span>
+            </h2>
+            <p className="text-lg">
+            Our Services are built to be for Every Common Person’s ENTERTAINMENT reach with a catalogue of Movies, Series, Short Films and Songs.
+            </p>
+            <Link
+                    className="btn btn-primary mt-6 mb-12"
+                    href="/"
+                    >
+                   Watch Now
+                  </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+ 
+
+
       {/* Banner */}
-      <section className="section banner relative pb-0">
+      {/* <section className="section banner relative pb-0">
         <ImageFallback
           className="absolute bottom-0 left-0 z-[-1] w-full"
           src={"/images/banner-bg-shape.svg"}
           width={1905}
-          height={295}
+          height={395}
           alt="banner-shape"
           priority
         />
@@ -73,7 +100,7 @@ const Home = ({
             )}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Home main */}
       <section className="section">
@@ -84,7 +111,7 @@ const Home = ({
               {featured_posts.enable && (
                 <div className="section">
                   {markdownify(featured_posts.title, "h2", "section-title")}
-                  <div className="rounded border border-border p-6 dark:border-darkmode-border">
+                  <div className="p-6 dark:border-darkmode-border">
                     <div className="row">
                       <div className="md:col-6">
                         <Post post={featuredPosts[0]} />
@@ -96,7 +123,7 @@ const Home = ({
                             <div
                               className={`mb-6 flex items-center pb-6 ${
                                 i !== arr.length - 1 &&
-                                "border-b border-border dark:border-darkmode-border"
+                                "dark:border-darkmode-border"
                               }`}
                               key={`key-${i}`}
                             >
@@ -148,7 +175,7 @@ const Home = ({
               {recent_posts.enable && (
                 <div className="section pt-0">
                   {markdownify(recent_posts.title, "h2", "section-title")}
-                  <div className="rounded border border-border px-6 pt-6 dark:border-darkmode-border">
+                  <div className="px-6 pt-6 dark:border-darkmode-border">
                     <div className="row">
                       {sortPostByDate.slice(0, showPosts).map((post) => (
                         <div className="mb-8 md:col-6" key={post.slug}>
@@ -167,7 +194,7 @@ const Home = ({
             </div>
             {/* sidebar */}
             <Sidebar
-              className={"lg:mt-[9.5rem]"}
+              className={"lg:mt-[5.7rem]"}
               posts={posts}
               categories={categories}
             />
