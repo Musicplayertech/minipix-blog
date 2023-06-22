@@ -112,7 +112,7 @@ const Home = ({
               {featured_posts.enable && (
                 <div className="section">
                   {markdownify(featured_posts.title, "h2", "section-title")}
-                  <div className="p-6 dark:border-darkmode-border">
+                  <div className="dark:border-darkmode-border">
                     <div className="row">
                       <div className="md:col-6">
                         <Post post={featuredPosts[0]} />
@@ -176,7 +176,7 @@ const Home = ({
               {recent_posts.enable && (
                 <div className="section pt-0">
                   {markdownify(recent_posts.title, "h2", "section-title")}
-                  <div className="px-6 pt-6 dark:border-darkmode-border">
+                  <div className="px-0 pt-6 dark:border-darkmode-border">
                     <div className="row">
                       {sortPostByDate.slice(0, showPosts).map((post) => (
                         <div className="mb-8 md:col-6" key={post.slug}>
