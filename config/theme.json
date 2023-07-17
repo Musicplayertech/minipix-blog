@@ -32,7 +32,7 @@
   "fonts": {
     "font_family": {
       "primary": "Raleway:wght@400",
-      "primary_type": "Open Sans",
+      "primary_type": "Poppins",
       "secondary": "Open Sans:wght@400;700",
       "secondary_type": "Poppins"
     },
