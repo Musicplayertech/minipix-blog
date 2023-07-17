@@ -31,13 +31,13 @@ const SearchPage = () => {
     <Base title={`Search results for ${query.key}`}>
       <div className="section">
         <div className="container">
-          <h1 className="h2 mb-8 text-center">
+          <h1 className="h4 mb-8 ">
             Search results for <span className="text-primary">{query.key}</span>
           </h1>
           {searchResults.length > 0 ? (
             <div className="row">
               {searchResults.map((post, i) => (
-                <div key={`key-${i}`} className="col-12 mb-8 sm:col-6">
+                <div key={`key-${i}`} className="col-12 mb-8 sm:col-4">
                   <Post post={post} />
                 </div>
               ))}

@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="navbar container px-1 sm:px-8">
-        <div className="order-0">
+        <div className= "">
           <Logo />
         </div>
         <div className="flex items-center space-x-4 xl:space-x-8">

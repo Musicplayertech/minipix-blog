@@ -1,7 +1,7 @@
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import ImageFallback from "@layouts/components/ImageFallback";
-import Pagination from "@layouts/components/Pagination";
+//import Pagination from "@layouts/components/Pagination";
 import Post from "@layouts/partials/Post";
 import Sidebar from "@layouts/partials/Sidebar";
 import { getListPage, getSinglePage } from "@lib/contentParser";
@@ -9,13 +9,19 @@ import { getTaxonomy } from "@lib/taxonomyParser";
 import dateFormat from "@lib/utils/dateFormat";
 import { sortByDate } from "@lib/utils/sortFunctions";
 import { markdownify } from "@lib/utils/textConverter";
+import Image from "next/image";
 import Link from "next/link";
 import { FaRegCalendar } from "react-icons/fa";
+import { Autoplay, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css';
+ 
 const { blog_folder, pagination } = config.settings;
 
 const Home = ({
   banner,
   posts,
+  swipers,
   featured_posts,
   recent_posts,
   categories,
@@ -27,18 +33,18 @@ const Home = ({
     (post) => post.frontmatter.featured
   );
   const showPosts = pagination;
-
+   
   return (
     <Base> 
-  <section className="background-radial-gradient mb-2 text-center lg:text-left ">
-    <div className="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('/images/banner-author.png')] h-[650px]">
+  <section className="container background-radial-gradient mb-2 text-center lg:text-left ">
+    <div className="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('/images/banner-author.png')] h-[550px]">
       <div
         className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] bg-fixed">
         <div className="flex h-full items-end justify-center">
           <div className="max-w-[800px] px-6 text-center text-white md:py-0 md:px-12">
-            <h2 className="text-white mb-6 text-4xl font-bold leading-tight tracking-tight md:text-6xl xl:text-7xl">
+            <h3 className="text-white mb-6 font-bold leading-tight tracking-tight ">
               Are you ready <br /><span>for Entertainment !</span>
-            </h2>
+            </h3>
             <p className="text-lg">
             Our Services are built to be for Every Common Person’s ENTERTAINMENT reach with a catalogue of Movies, Series, Short Films and Songs.
             </p>
@@ -107,9 +113,9 @@ const Home = ({
       <section className="section">
         <div className="container">
           <div className="row items-start">
-            <div className="mb-12 lg:mb-0 lg:col-8">
+            <div className="mb-12 lg:mb-0 lg:col-12">
               {/* Featured posts */}
-              {featured_posts.enable && (
+              {/* {featured_posts.enable && (
                 <div className="section">
                   {markdownify(featured_posts.title, "h2", "section-title")}
                   <div className="dark:border-darkmode-border">
@@ -157,7 +163,7 @@ const Home = ({
                     </div>
                   </div>
                 </div>
-              )}
+              )} */}
 
               {/* Promotion */}
               {/* {promotion.enable && (
@@ -178,8 +184,8 @@ const Home = ({
                   {markdownify(recent_posts.title, "h2", "section-title")}
                   <div className="px-0 pt-6 dark:border-darkmode-border">
                     <div className="row">
-                      {sortPostByDate.slice(0, showPosts).map((post) => (
-                        <div className="mb-8 md:col-6" key={post.slug}>
+                      {sortPostByDate.map((post) => (
+                        <div className="py-4  px-4  md:col-4" key={post.slug}>
                           <Post post={post} />
                         </div>
                       ))}
@@ -188,17 +194,17 @@ const Home = ({
                 </div>
               )}
 
-              <Pagination
+              {/* <Pagination
                 totalPages={Math.ceil(posts.length / showPosts)}
                 currentPage={1}
-              />
+              /> */}
             </div>
             {/* sidebar */}
-            <Sidebar
+            {/* <Sidebar
               className={"lg:mt-[5.7rem]"}
               posts={posts}
               categories={categories}
-            />
+            /> */}
           </div>
         </div>
       </section>
